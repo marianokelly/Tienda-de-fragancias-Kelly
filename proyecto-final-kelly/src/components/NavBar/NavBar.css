@@ -1,0 +1,19 @@
+.nav{
+    margin:0;
+    padding:0;
+    display: flex;
+    background-color: rgb(223, 220, 230);
+    justify-content: center;
+    
+}
+
+.nav a{
+    color: rgb(73, 71, 71);
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}

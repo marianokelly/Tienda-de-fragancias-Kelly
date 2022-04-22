@@ -1,0 +1,18 @@
+.boton {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 12px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: white;
+    color: #008CBA;
+    border: 2px solid #008CBA; 
+    cursor: pointer;
+}

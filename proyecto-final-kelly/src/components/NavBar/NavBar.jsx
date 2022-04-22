@@ -1,18 +1,21 @@
 import React from 'react';
+import CartWidget from '../CartWidget/CartWidget';
+import logo from './img/logo.JPG';
 import './NavBar.css';
 
 function NavBar(props) {
     return (
         
         <div>
-            <h1 className='titulo'>PerfumArte</h1>
-            <div><img src="logo.JPG" alt="" /></div>
+            <img src={logo} alt="" />
             <ul className='nav'>
                 <a href="#">Ellas</a>
                 <a href="#">Ellos</a>
                 <a href="#">Unisex</a>
                 <a href="#">Sale!</a>
             </ul>
+            <CartWidget />
+
         </div>
     );
 }

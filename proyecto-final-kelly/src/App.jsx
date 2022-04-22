@@ -2,11 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 import NavBar from './components/NavBar/NavBar';
+import Button from './components/Button';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <NavBar />
+      <ItemListContainer saludo='Bienvenidos a PerfumArte'/>
+
+      
+    
+    
+    
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

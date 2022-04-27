@@ -13,8 +13,9 @@ function NavBar(props) {
                 <a href="#">Ellos</a>
                 <a href="#">Unisex</a>
                 <a href="#">Sale!</a>
+                <CartWidget />
             </ul>
-            <CartWidget />
+            
 
         </div>
     );

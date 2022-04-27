@@ -11,11 +11,6 @@ function App() {
       <NavBar />
       <ItemListContainer saludo='Bienvenidos a PerfumArte'/>
 
-      
-    
-    
-    
-
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -1,0 +1,4 @@
+.contenedor-item{
+    display: flex;
+    flex-wrap: nowrap;
+}

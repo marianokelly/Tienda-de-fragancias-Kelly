@@ -18,9 +18,9 @@ const ItemListContainer = (props) => {
 
   return (
     <> 
-      <div>{props.saludo}</div>
-      <ItemCount stock={5} initial={1}/>
-      <ItemList products={products} />
+    <div class="contenedor-item">
+        <ItemList products={products} />
+    </div>
     </>
     
   );

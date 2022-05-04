@@ -30,17 +30,13 @@ const ItemCount = ({ stock, initial }) => {
     return (
         <div className="d-flexflex-column">
           <div className="d-flexmt-3">
-            <Button variant="primary"  onClick={onDecrease} className="px-3mx-3">
-              -
-            </Button>{" "}
+            <Button variant="primary"  onClick={onDecrease} className="px-3mx-3">-</Button>{" "}
             <div><h3 className="px-3 mx-3">{count}</h3></div>
-            <Button variant="primary" onClick={onIncrease} className="px-3mx-3">
-              +
-            </Button>{" "}
+            <Button variant="primary" onClick={onIncrease} className="px-3mx-3">+</Button>{" "}
           </div>
-          <Button variant="danger" onClick={onAdd}  className="mt-3">
-            Unidades
-          </Button>{" "}
+          <div class="agregar">
+          <Button variant="danger" onClick={onAdd}  className="mt-3">Agregar</Button>{" "}
+          </div>
         </div>
       );
 }

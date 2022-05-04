@@ -1,0 +1,35 @@
+
+.contenedor-producto{
+    border: solid 2px rgb(218, 223, 238);
+    width: 20%;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+}
+
+.contenedor-producto:hover{
+    background:rgb(153, 171, 226);
+    cursor: pointer;
+}
+
+
+img {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.nombre-producto{
+    font-size:18px ;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+}
+
+.contenedor-item{
+    margin-top: 35px;
+}
+
+.precio-producto{
+    font-size:18px ;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}

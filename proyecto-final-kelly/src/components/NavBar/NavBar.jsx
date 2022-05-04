@@ -3,22 +3,27 @@ import CartWidget from '../CartWidget/CartWidget';
 import logo from './img/logo.JPG';
 import './NavBar.css';
 
-function NavBar(props) {
-    return (
-        
-        <div>
-            <img src={logo} alt="" />
-            <ul className='nav'>
-                <a href="#">Ellas</a>
-                <a href="#">Ellos</a>
-                <a href="#">Unisex</a>
-                <a href="#">Sale!</a>
-                <CartWidget />
-            </ul>
-            
 
+            
+const NavBar = () =>{
+
+    return(
+        <>
+         <div className="contenedor-nav">
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Ellos</a>
+                <a href="#">Ellas</a>
+                <a href="#">SALE!</a>
+                <a href="#">Contacto</a>
+                <div class="animation start-home"></div>
+            </nav>
+            <CartWidget/>
         </div>
-    );
-}
+        </>
+    )
+    };
+
+    
 
 export default NavBar;

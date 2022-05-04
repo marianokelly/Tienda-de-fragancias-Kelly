@@ -1,0 +1,18 @@
+.Item-detail{
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 40px;
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+}
+.right .info-container h2{
+    font-size: 28px;
+}
+

@@ -1,37 +1,50 @@
 .d-flexflex-column{
-    width: 25%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 
 .d-flexmt-3{
     display: flex;
+    font-family: 'Cherry Swash', cursive;
     flex-wrap: nowrap;
-    width: 300px;
-    height: 55px;
-    justify-content: space-between;
+    width: 100%;
+    height: 38px;
+    justify-content: space-around;
     align-items: center;
 }
 
 .px-3mx-3{
     font-size: 25px ;
-    color: aliceblue;
-    width: 55px;
-    height: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Cherry Swash', cursive;
+    align-content: center;
+    width: 35px;
+    height: 35px;
     border-radius: 10px;
-    background-color: rgb(40, 40, 206);
-    border: 1px solid black;
+    background-color: rgb(90, 90, 230);
+    border: 1.5 px solid rgb(255, 255, 255);
+    padding-bottom: 15px;
 }
 
 .mt-3{
-    font-size: 16px;
-    color: aliceblue;
-    padding: 10px 25px 10px 25px;
-    height: 50px;
-    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Cherry Swash', cursive;
+    color: rgb(0, 2, 3);
+    padding: 10px 10px 10px 10px;
+    height: 35px;
+    width: 85px;
+    border-radius: 8px;
     text-align: center;
-    background-color: rgb(41, 41, 223);
-    border: 1px solid black;
+    background-color: rgb(90, 90, 230);
+    border: 1.5px solid rgb(255, 255, 255);
+}
+
+
+.agregar{
+    width: 100%;
+}
+
+.mt-3.btn.btn-danger{
+    justify-content: center;
 }

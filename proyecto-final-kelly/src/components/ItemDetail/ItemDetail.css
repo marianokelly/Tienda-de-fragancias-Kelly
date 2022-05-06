@@ -6,13 +6,25 @@
 }
 
 .left{
-    width: 50%;
+    width: 40%;
 }
 
 .right{
     width: 50%;
+    justify-content: center;
 }
-.right .info-container h2{
+
+
+.right  .h2{
     font-size: 28px;
+}
+
+.right .titulo {
+width: 90%;
+}
+
+.count-container{
+    width: 60%;
+    padding-left: 85px;
 }
 

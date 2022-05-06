@@ -11,13 +11,11 @@ function ItemDetail ({item}) {
                 </div>
             </div>
             <div className="right">
-                <div className="info-container">
-                    <h2 className="titulo">{item?.title}</h2>
-                    <p>{item?.price}</p>
-                    <p>{item?.description}</p>
-                    <div className="count-container">
-                        <Itemcount initial={0} stock={item.stock} onAdd={()=>{}}/>
-                    </div>
+                <div className="titulo">
+                    <h2>{item?.title}</h2> <p>{item?.price}</p>
+                </div>
+                <div className="count-container">
+                    <Itemcount initial={0} stock={item.stock} onAdd={()=>{}}/>
                 </div>
             </div>
         </div>

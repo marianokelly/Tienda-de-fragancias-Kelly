@@ -5,14 +5,19 @@ import NavBar from './components/NavBar/NavBar';
 import Button from './components/Button';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className='App'>
       <NavBar />
+      <Routes>
+        <Route path="/" element={<ItemListContainer/>}/>
+        <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
+        <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+      </Routes>
       
-      <ItemDetailContainer/>
-
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

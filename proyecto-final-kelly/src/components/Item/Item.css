@@ -17,6 +17,10 @@ img {
     margin-bottom: 10px;
 }
 
+.agregar{
+    margin-bottom: 8px;
+}
+
 .nombre-producto{
     font-size:18px ;
     margin-bottom: 10px;
@@ -32,4 +36,17 @@ img {
     font-size:18px ;
     margin-bottom: 5px;
     margin-top: 0px;
+}
+
+.detalle{
+    color:black;
+    margin-bottom: 5px;
+    padding: 2px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius:5px;
+    background-color:rgb(67, 99, 194) ;
+    font-size:16px;
+    font-style:oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

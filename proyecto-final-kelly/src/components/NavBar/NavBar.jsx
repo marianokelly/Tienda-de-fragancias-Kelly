@@ -1,29 +1,26 @@
 import React from 'react';
 import CartWidget from '../CartWidget/CartWidget';
-import logo from './img/logo.JPG';
 import './NavBar.css';
-
 
             
 const NavBar = () =>{
 
     return(
-        <>
+        
          <div className="contenedor-nav">
+             <h1 className='nombre-pagina'>PerfumArte</h1>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Ellos</a>
-                <a href="#">Ellas</a>
-                <a href="#">SALE!</a>
-                <a href="#">Contacto</a>
+                <a>Inicio</a>
+                <a>Ellos</a>
+                <a>Ellas</a>
+                <a>SALE!</a>
+                <a>Contacto</a>
                 <div class="animation start-home"></div>
             </nav>
             <CartWidget/>
         </div>
-        </>
     )
-    };
-
+}
     
 
 export default NavBar;

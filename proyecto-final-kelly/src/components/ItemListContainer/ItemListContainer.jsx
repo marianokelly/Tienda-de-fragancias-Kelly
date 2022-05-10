@@ -3,13 +3,11 @@ import "./ItemListContainer.css"
 import ItemCount from '../Itemcount/Itemcount'
 import ItemList from '../ItemList/ItemList'
 import getData from '../services/getData'
-
 import { useState , useEffect } from 'react'
 
-const ItemListContainer = (props) => {
 
+const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
-
   useEffect(() => {
     getData
       .then((response) => setProducts(response))
@@ -17,14 +15,9 @@ const ItemListContainer = (props) => {
   }, []);
 
   return (
-    <> 
-    <div class="contenedor-item">
+    <div className='contenedor-item'>
         <ItemList products={products} />
     </div>
-    </>
-    
   );
-};
-
+}
 export default ItemListContainer
-

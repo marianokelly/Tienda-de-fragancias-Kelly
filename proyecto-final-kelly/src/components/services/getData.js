@@ -66,9 +66,12 @@ const data = [
    
 ];
 
-const getData = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(data);
-    }, 2000);
-  });
-  export default getData;
+const getData= new Promise((resolve)=>{
+  setTimeout(()=>{
+    resolve(data);
+  }, 2000);          //efecto de montaje 
+
+});
+
+
+export default getData

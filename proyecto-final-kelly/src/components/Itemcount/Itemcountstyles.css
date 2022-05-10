@@ -25,7 +25,9 @@
     background-color: rgb(90, 90, 230);
     border: 1.5 px solid rgb(255, 255, 255);
     padding-bottom: 15px;
+    cursor: pointer;
 }
+
 
 .mt-3{
     font-size: 18px;
@@ -38,6 +40,7 @@
     text-align: center;
     background-color: rgb(90, 90, 230);
     border: 1.5px solid rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 

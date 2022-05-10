@@ -1,80 +1,17 @@
 import React, {useEffect, useState} from "react";
-import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import "./ItemDetailContainer.css"
 
-function getItem (id){
+function getItem (){
     const myPromise= new Promise ((resolve, reject)=>{
-        const productsList=[
-            {
-                id: 1,
-                image:
-                  "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw72dfb616/original/90_R721008-R050MLS_RNUL_20_DylanBluePourHomme50ml-Fragrances-versace-online-store_3_7.jpg?sw=748&sh=1050&sm=fit",
-                title: "Versace Dylan Blue",
-                price: "13500",
-                stock: "4",
-              },
-              {
-                id: 2,
-                image: "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw64737ed7/original/90_R720010-R100MLS_RNUL_20_PourHomme100ml-Fragrances-versace-online-store_3_11.jpg?sw=850&sh=1200&sm=fit",
-                title: "Versace Pour Homme",
-                price: "12000",
-                stock: "4",
-              },
-              {
-                id: 3,
-                image:
-                  "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dwc601ec28/original/90_R740110-R100MLS_RNUL_20_ErosEaudeParfum100ml-Fragrances-versace-online-store_0_2.jpg?sw=748&sh=1050&sm=fit",
-                title: "Versace Eros EDP",
-                price: "14900",
-                stock: "5",
-              },
-              {
-                id: 4,
-                image:
-                  "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw98da4df1/original/90_R500010-R100MLS_RNUL_20_EauFrache100ml-Fragrances-versace-online-store_2_12.jpg?sw=850&sh=1200&sm=fit",
-                title: "Versace EAU Fraiche",
-                price: "11200",
-                stock: "3",
-              },
-              {
-                id: 5,
-                image:
-                  "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dweb797b55/original/90_R711432-R100MLS_RNUL_20_AtelierVersaceJasminauSoleil-Fragrances-versace-online-store_2_4.jpg?sw=748&sh=1050&sm=fit",
-                title: "Atelier Versace Jasmin au Soleil",
-                price: "17200",
-                stock: "8",
-              },
-              {
-                id: 6,
-                image:
-                  "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw38ebf3e5/original/90_R711232-R100MLS_RNUL_20_AtelierVersaceFigueBlanche-Fragrances-versace-online-store_3_4.jpg?sw=748&sh=1050&sm=fit",
-                title: "Atelier Versace Figue Blanche",
-                price: "16700",
-                stock: "3",
-              },
-              {
-                id: 7,
-                image:
-                  "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dweb797b55/original/90_R711432-R100MLS_RNUL_20_AtelierVersaceJasminauSoleil-Fragrances-versace-online-store_2_4.jpg?sw=748&sh=1050&sm=fit",
-                title: "Atelier Versace Éclat de Rose",
-                price: "14800",
-                stock: "3",
-              },
-              {
-                id: 8,
-                image:
-                  "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw46727686/original/90_R711632-R100MLS_RNUL_20_AtelierVersaceVanilleRouge-Fragrances-versace-online-store_3_4.jpg?sw=748&sh=1050&sm=fit",
-                title: "Atelier Versace Vanille Rouge",
-                price: "15500",
-                stock: "3",
-              },
-             
-          ];
-
-          const item=productsList.filter(item=>item.id===id);
-
-
+        const item={
+            id: 1,
+            title: "Versace Dylan Blue",
+            price:"$13.500",
+            stock:5,
+            description:"Sus notas de salida aparecen en un inusual acorde frutal de grosellas negras, manzana Granny Smith, trébol blanco, nomeolvides y shiso. En su corazón un bouquet floral de rosa silvestre, rosa, jazmín, melocotón y petalia. Dan paso a un fondo intenso de styrax, maderas blancas, almizcle y pachuli.",
+            imageUrl:"https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw72dfb616/original/90_R721008-R050MLS_RNUL_20_DylanBluePourHomme50ml-Fragrances-versace-online-store_3_7.jpg?sw=748&sh=1050&sm=fit"
+        };
         setTimeout(()=>{
             resolve (item);
         },2000);
@@ -84,10 +21,9 @@ function getItem (id){
 
 function ItemDetailContainer () {
     const [item, setItem]= useState({});
-    const {id}=useParams();
 
-    useEffect((id)=> {
-        getItem(id)
+    useEffect(()=> {
+        getItem()
             .then(res=>{
                 setItem (res);
              })
@@ -95,7 +31,7 @@ function ItemDetailContainer () {
                 console.log(err);
             });
     }, []);
-    
+
     return(
         <div className="item-detail-container">
             <ItemDetail item={item}/>
@@ -104,5 +40,4 @@ function ItemDetailContainer () {
 
 }
 
-export default ItemDetailContainer;
-    
+export default ItemDetailContainer;*/

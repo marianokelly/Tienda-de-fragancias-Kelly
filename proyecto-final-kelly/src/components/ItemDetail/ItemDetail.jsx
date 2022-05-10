@@ -1,21 +1,22 @@
-import React from "react";
+/*import React from "react";
 import Itemcount from "../Itemcount/Itemcount";
 import "./ItemDetail.css"
 
-function ItemDetail ({item}) {
+function ItemDetail ({title, price, image, stock}) {
     return (
         <div className="Item-detail">
             <div className="left">
                 <div className="img-detail-container">
-                    <img src={item?.imageUrl} alt="Imagen Producto" />
+                    <img src={image} alt="Imagen Producto" />
                 </div>
             </div>
             <div className="right">
-                <div className="titulo">
-                    <h2>{item?.title}</h2> <p>{item?.price}</p>
-                </div>
-                <div className="count-container">
-                    <Itemcount initial={0} stock={item.stock} onAdd={()=>{}}/>
+                <div className="info-container">
+                    <h2 className="titulo">{title}</h2>
+                    <p>{price}</p>
+                    <div className="count-container">
+                        <Itemcount initial={0} stock={stock} onAdd={()=>{}}/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -23,4 +24,4 @@ function ItemDetail ({item}) {
 
 };
 
-export default ItemDetail;
+export default ItemDetail; 
